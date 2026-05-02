@@ -1,0 +1,75 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- CaYaDev marka logosu — Assets/CaYaDev.svg dosyasından çevrildi.
+         viewBox="0 0 287.34 36.78", iki renk: beyaz ve #dc2727. -->
+
+    <Color x:Key="LogoWhiteColor">#FFFFFF</Color>
+    <Color x:Key="LogoRedColor">#DC2727</Color>
+    <SolidColorBrush x:Key="LogoWhiteBrush" Color="{StaticResource LogoWhiteColor}" />
+    <SolidColorBrush x:Key="LogoRedBrush" Color="{StaticResource LogoRedColor}" />
+
+    <DrawingImage x:Key="CaYaDevLogo">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <!-- White: V harfi (sağ) -->
+                <GeometryDrawing Brush="{StaticResource LogoWhiteBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M246.93,0l21.5,22.56,13.19-21.51L287.34,0l-17.23,36.69h-3.35L241.21,0h5.72Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- Red: C harfi -->
+                <GeometryDrawing Brush="{StaticResource LogoRedBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M47.33,0 L34.18,8.71 L8.62,8.71 L8.62,29.55 L34.07,29.55 L47.33,36.7 L0,36.7 L0,0 L47.33,0 Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- Red: Y harfi -->
+                <GeometryDrawing Brush="{StaticResource LogoRedBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M133.16,0.05 L115.25,21.85 L112.95,36.78 L107.85,36.78 L104.27,21.85 L83.58,0.05 L90.78,0.05 L109.93,16.85 L125.95,0.05 L133.16,0.05 Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- White: D harfi (sağ üst) -->
+                <GeometryDrawing Brush="{StaticResource LogoWhiteBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M184.93,32.42l15.99-15.72-22.52-12.42L177.15,0l33.84,15.45v2.51l-24.77,18.74-1.3-4.28Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- Red: A harfi (1) — outer + inner triangle (EvenOdd) -->
+                <GeometryDrawing Brush="{StaticResource LogoRedBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry FillRule="EvenOdd"
+                                      Figures="M84.34,18.89l-1.61-4.21L77.14,0h-19.22l-3.9,15.61-1.11,4.43-4.17,16.65h4.94l6.86-13.08,6.16,2.88h4.22l6.17-3.5,9.1,13.7h4.94l-6.79-17.81ZM68.81,20.5l-5.65-1.87,4.87-9.3,5.97,8.99-5.19,2.17Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- Red: A harfi (2) — outer + inner triangle (EvenOdd) -->
+                <GeometryDrawing Brush="{StaticResource LogoRedBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry FillRule="EvenOdd"
+                                      Figures="M165.49,18.89l-1.61-4.21L158.29,0h-19.22l-3.9,15.61-1.11,4.43-4.17,16.65h4.94l6.86-13.08,6.16,2.88h4.22l6.17-3.5,9.1,13.7h4.94l-6.79-17.81ZM149.96,20.5l-5.65-1.87,4.87-9.3,5.97,8.99-5.19,2.17Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- White: D harfi gövdesi -->
+                <GeometryDrawing Brush="{StaticResource LogoWhiteBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M174.93,0 L166.64,0 L178.65,36.78 L184.39,36.7 L174.93,0 Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+
+                <!-- White: E harfi -->
+                <GeometryDrawing Brush="{StaticResource LogoWhiteBrush}">
+                    <GeometryDrawing.Geometry>
+                        <PathGeometry Figures="M243.91,36.7 L227.66,36.7 L221.91,36.78 L209.91,0 L218.19,0 L218.19,0.01 L239.17,0 L237.85,3.22 L219.83,6.36 L222.09,15.13 L237.15,15.13 L237.38,19.11 L223.73,21.48 L226.04,30.41 L241.59,33.12 L243.91,36.7 Z" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CaYaISOBoot.Logging/1.0.0": {
+        "dependencies": {
+          "CaYaISOBoot.Core": "1.0.0"
+        },
+        "runtime": {
+          "CaYaISOBoot.Logging.dll": {}
+        }
+      },
+      "CaYaISOBoot.Core/1.0.0": {
+        "runtime": {
+          "CaYaISOBoot.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CaYaISOBoot.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CaYaISOBoot.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

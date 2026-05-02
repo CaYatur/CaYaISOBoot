@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaYaISOBoot.Core\CaYaISOBoot.Core.csproj" />
+    <ProjectReference Include="..\CaYaISOBoot.Disk\CaYaISOBoot.Disk.csproj" />
+    <ProjectReference Include="..\CaYaISOBoot.ISO\CaYaISOBoot.ISO.csproj" />
+    <ProjectReference Include="..\CaYaISOBoot.Logging\CaYaISOBoot.Logging.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\installer_payload\**\*">
+      <Link>installer_payload\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Target Name="BuildCaYaBootPayload" BeforeTargets="BeforeBuild" Condition="'$(DesignTimeBuild)' != 'true' and '$(OS)' == 'Windows_NT'">
+    <Exec Command="powershell -NoProfile -ExecutionPolicy Bypass -File &quot;$(MSBuildProjectDirectory)\..\..\build\Build-BootPayload.ps1&quot; -Configuration &quot;$(Configuration)&quot;" />
+  </Target>
+</Project>

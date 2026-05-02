@@ -1,0 +1,14 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# UEFI build outputs
+Build/
+*.efi
+*.efi.debug
+
+# Local installer payload binary is produced by the boot engine build.
+installer_payload/EFI/BOOT/BOOTX64.EFI
+
